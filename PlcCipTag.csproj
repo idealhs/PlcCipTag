@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net6.0;net8.0;net9.0;net10.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <Version>1.0.0</Version>
+    <RootNamespace>PlcCipTag</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>PlcCipTag</PackageId>
+    <Authors>Sean Liu</Authors>
+    <Description>CIP protocol Tag-based PLC communication library supporting Allen-Bradley, ICON, and Omron PLCs via EtherNet/IP.</Description>
+    <PackageTags>PLC;CIP;EtherNet/IP;Allen-Bradley;Omron;ICON;libplctag;Industrial;Automation</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageIcon>assets/logo.jpg</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/idealhs/PlcCipTag</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="libplctag" Version="1.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.txt" Pack="True" PackagePath="" />
+    <None Include="README.md" Pack="True" PackagePath="" />
+    <None Include="assets\logo.jpg" Pack="True" PackagePath="assets/" />
+  </ItemGroup>
+
+</Project>
